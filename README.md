@@ -23,6 +23,18 @@ Unity 2018 or higher
 4. Check Export Mesh Toggle and Select Directory if you want to export Mesh assets
 
 5. Press Generate Button!
+<img src="https://github.com/sanukin39/UniVertexColorModelGenerator/blob/master/Demo/demo03.png" width="200">
+
+## Using Material
+### Before
+4 standard materials
+
+<img src="https://github.com/sanukin39/UniVertexColorModelGenerator/blob/master/Demo/demo04.png" width="200">
+
+### After
+1 vertex color material
+
+<img src="https://github.com/sanukin39/UniVertexColorModelGenerator/blob/master/Demo/demo05.png" width="100">
 
 ## Install
 use unitypackage at [release](https://github.com/sanukin39/UniVertexColorModelGenerator/releases/) page
