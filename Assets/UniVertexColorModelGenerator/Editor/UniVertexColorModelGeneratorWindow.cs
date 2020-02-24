@@ -21,10 +21,10 @@ namespace UniVertexColorModelGenerator
         void OnGUI()
         {
             _combineTarget = (GameObject)EditorGUILayout.ObjectField("CombineTarget", _combineTarget, typeof(GameObject), true);
-            _exportMesh = EditorGUILayout.Toggle("Export Mesh", _exportMesh);
-            _exportDirectory = (DefaultAsset) EditorGUILayout.ObjectField("Export Directory", _exportDirectory, typeof(DefaultAsset), true);
             _material = (Material) EditorGUILayout.ObjectField("Vertex Color Material", _material, typeof(Material),
                 true);
+            _exportMesh = EditorGUILayout.Toggle("Export Mesh", _exportMesh);
+            _exportDirectory = (DefaultAsset) EditorGUILayout.ObjectField("Export Directory", _exportDirectory, typeof(DefaultAsset), true);
             if (GUILayout.Button("Generate"))
             {
                 if (_combineTarget == null)
@@ -66,7 +66,6 @@ namespace UniVertexColorModelGenerator
                         vertices = vertices.ToArray(), triangles = triangles.ToArray(), uv = mesh.uv,
                         normals = mesh.normals, colors = colors
                     };
-
 
                     var combineInstance = new CombineInstance
                         {transform = meshFilter.transform.localToWorldMatrix, mesh = newMesh};
